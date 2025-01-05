@@ -104,13 +104,9 @@ $$
 
 ### 4.2 核心公式
 
-$$
-E[g^2]_t = \beta \, E[g^2]_{t-1} + (1-\beta)\, g_t^2,
-$$
+$$E[g^2]_t = \beta \, E[g^2]_{t-1} + (1-\beta)\, g_t^2,$$
 
-$$
-\theta \leftarrow \theta \;-\;\frac{\eta}{\sqrt{E[g^2]_t + \epsilon}}\, g_t.
-$$
+$$\theta \leftarrow \theta \;-\;\frac{\eta}{\sqrt{E[g^2]_t + \epsilon}}\, g_t.$$
 
 - $\beta$ 控制对过去梯度平方的遗忘速率。
 
@@ -131,27 +127,16 @@ $$
 ### 5.2 核心公式
 
 1. **一阶矩 (动量)**  
-   $$
-   m_t = \beta_1\,m_{t-1} + (1-\beta_1)\,g_t.
-   $$
+   $$m_t = \beta_1\,m_{t-1} + (1-\beta_1)\,g_t.$$
 
 2. **二阶矩**  
-   $$
-   v_t = \beta_2\,v_{t-1} + (1-\beta_2)\,g_t^2.
-   $$
+   $$v_t = \beta_2\,v_{t-1} + (1-\beta_2)\,g_t^2.$$
 
 3. **偏差修正**  
-   $$
-   \hat{m}_t = \frac{m_t}{1-\beta_1^t}, 
-   \quad
-   \hat{v}_t = \frac{v_t}{1-\beta_2^t}.
-   $$
+   $$\hat{m}_t = \frac{m_t}{1-\beta_1^t}, \quad \hat{v}_t = \frac{v_t}{1-\beta_2^t}.$$
 
 4. **更新**  
-   $$
-   \theta \leftarrow \theta 
-     - \eta \cdot \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}.
-   $$
+   $$\theta \leftarrow \theta - \eta \cdot \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}.$$
 
 ### 5.3 与前面方法的区别/改进
 
@@ -171,16 +156,10 @@ $$
 ### 6.2 核心公式
 
 1. **Adam 更新** (不含正则)  
-   $$
-   \theta \leftarrow \theta 
-     - \eta \cdot \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}.
-   $$
+   $$\theta \leftarrow \theta - \eta \cdot \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}.$$
 
 2. **Weight Decay**  
-   $$
-   \theta \leftarrow \theta 
-     - \eta\,\lambda\,\theta.
-   $$
+   $$\theta \leftarrow \theta - \eta\,\lambda\,\theta.$$
 
 ### 6.3 与 Adam 的区别/改进
 

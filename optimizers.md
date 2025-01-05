@@ -25,7 +25,7 @@ $$
 $$
 
 其中  
-- $ \theta $ 为模型参数；  
+- $\theta$ 为模型参数；  
 - $ \eta $ 为学习率 (learning rate)；  
 - $ \nabla_\theta \mathcal{L}(\theta) $ 表示损失函数对于 $ \theta $ 的梯度。
 

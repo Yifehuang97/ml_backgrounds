@@ -1,7 +1,7 @@
 ---
 title: 从 SGD 到 AdamW：常用优化器的演进与总结
-author: ChatGPT
-date: 2023
+author: Yifeng Huang
+date: 2025-01-05
 ---
 
 # 从 SGD 到 AdamW：常用优化器的演进与总结
@@ -26,8 +26,8 @@ $$
 
 其中  
 - $\theta$ 为模型参数；  
-- $ \eta $ 为学习率 (learning rate)；  
-- $ \nabla_\theta \mathcal{L}(\theta) $ 表示损失函数对于 $ \theta $ 的梯度。
+- $\eta$ 为学习率 (learning rate)；  
+- $\nabla_\theta \mathcal{L}(\theta)$ 表示损失函数对于 $\theta$ 的梯度。
 
 ### 1.3 特点
 
@@ -55,9 +55,9 @@ $$
 $$
 
 其中
-- $ v_t $ 是“动量”变量；  
-- $ \beta $ 为动量衰减系数，典型取值为 $0.9$；  
-- $ \eta $ 为学习率。
+- $v_t$ 是“动量”变量；  
+- $\beta$ 为动量衰减系数，典型取值为 $0.9$；  
+- $\eta$ 为学习率。
 
 ### 2.3 特点
 
@@ -84,8 +84,8 @@ $$
 $$
 
 其中
-- $ g_t = \nabla_\theta \mathcal{L}(\theta) $ 为当前梯度；  
-- $ h_t $ 累积历史梯度平方；  
+- $g_t = \nabla_\theta \mathcal{L}(\theta)$ 为当前梯度；  
+- $h_t$ 累积历史梯度平方；  
 - $\epsilon$ 为防止除 0 的平滑项（如 $10^{-8}$）。
 
 ### 3.3 与前面方法的区别/改进

@@ -21,7 +21,7 @@ date: 2025-01-05
 ### 1.2 核心公式
 
 $$
-\theta \leftarrow \theta \;-\; \eta \,\nabla_\theta \mathcal{L}(\theta).
+\theta \leftarrow \theta - \eta \,\nabla_\theta \mathcal{L}(\theta).
 $$
 
 其中  

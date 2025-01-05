@@ -21,7 +21,7 @@ date: 2025-01-05
 ### 1.2 核心公式
 
 $$
-\theta \leftarrow \theta - \eta \,\nabla_\theta \mathcal{L}(\theta).
+\theta \leftarrow \theta - \eta \nabla_\theta \mathcal{L}(\theta).
 $$
 
 其中  
@@ -46,12 +46,13 @@ $$
 ### 2.2 核心公式
 
 常见的 Momentum 更新形式：
+
 $$
-v_t \;=\; \beta \, v_{t-1} \;+\; (1 - \beta)\,\nabla_\theta \mathcal{L}(\theta),
+v_t = \beta \, v_{t-1} + (1 - \beta)\,\nabla_\theta \mathcal{L}(\theta),
 $$
 
 $$
-\theta \;\leftarrow\; \theta \;-\; \eta \, v_t,
+\theta \leftarrow \theta - \eta  v_t,
 $$
 
 其中
